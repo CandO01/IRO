@@ -1,0 +1,6 @@
+.mytable{
+    border: 2px solid black;
+}
+th,tr,td{
+    border: 2px solid black;
+}

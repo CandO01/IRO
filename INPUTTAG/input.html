@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="./input.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter amount" class="input1 js-btn1" onkeypress="keyPress(event);">
+        <button class="btn2" onclick="confirmPayment();">Confirm</button>
+        <p class="result js-payment"></p>
+    </div>
+    <button class="btn11 js-btn12" onclick="subCalling();">Subscribe</button>
+
+    <div class="container2">
+        <label for="">Password:</label>
+        <input type="password" class="input11 js-input" placeholder="Enter your password here">
+        <input type="checkbox" class="box1" onclick="checkHere();">
+        <p class="show1">Show password</p>
+    </div>
+    <script src="./input.js"></script>
+</body>
+</html>

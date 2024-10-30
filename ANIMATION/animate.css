@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(0,0,0,0.3), rgba(0,0,0,0.7));
+    position: relative;
+}
+.mack1{
+    position: absolute;
+    top: 1%;
+    padding: 7px;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    
+}
+.container{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: red;
+    transform: rotate(30deg);
+    transition: transform 2s;
+    animation: animate 8s ease-in-out;
+    animation-iteration-count: infinite;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.nested{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    animation: animate 8s ease-in-out;
+    animation-iteration-count: infinite;
+    padding: 9px;
+}
+@keyframes animate {
+    0%{
+        background-color: green;
+       
+        color: white;
+        font-size: 30px;
+    }
+    50%{
+        background-color: blue;
+        transform: rotate(360deg);
+      
+        color: white;
+        font-size: 30px;
+    }
+    75%{
+        color: white;
+        background-color: orangered;
+    }
+    100%{
+        transform: scale(1.5);
+        
+    }
+}
+.tanatanaWarisi{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: tanatanaWarisi 1s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+
+.tanatanaWarisi1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    animation: tanatanaWarisi1 1s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+.second{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: skruskru 1s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+.second-2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green; 
+    animation: skruskru 1s ease-in forwards;
+    animation-iteration-count: infinite;
+}
+@keyframes tanatanaWarisi {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+        transform: rotate(360deg);
+    }
+ 
+}
+@keyframes tanatanaWarisi1 {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        
+        
+    }
+ 
+}
+@keyframes skruskru {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
